@@ -66,4 +66,11 @@ class Claudebar < Formula
     # sample files.
     pkgshare.install(*leftover_contents) unless leftover_contents.empty?
   end
+
+  def caveats
+    <<~EOS
+      To wire claudebar into Claude Code's statusline, run:
+        claudebar setup
+    EOS
+  end
 end
