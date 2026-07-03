@@ -1,25 +1,25 @@
 class Claudebar < Formula
   desc "Powerline-style statusline for Claude Code, with a TUI configurator, themes and styles"
   homepage "https://micschr0.github.io/claudebar"
-  version "2026.7.2"
+  version "2026.7.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.2/claudebar-aarch64-apple-darwin.tar.gz"
-      sha256 "0455c5f00c43929baadc447c214f942d0320fe22a3b0c49923d25de247f0dbfb"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.3/claudebar-aarch64-apple-darwin.tar.gz"
+      sha256 "8158a8c6229bb522b1636f033e124138d48bb257c8c45ec7938c7c0c93d0882c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.2/claudebar-x86_64-apple-darwin.tar.gz"
-      sha256 "8b188511ec7cf69be1b083d5e08cfd32e386b6cf79a372ee20f536931d78a8c6"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.3/claudebar-x86_64-apple-darwin.tar.gz"
+      sha256 "8b7754e01d8ad28b3923ef5da00752e2ca2e500582cd36d7fe5490f19f3ecfd1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.2/claudebar-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "04de6837dd9a766814c722904e7f334989f6d05dcb8ec3327b2548850bbad831"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.3/claudebar-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "5bfe6207702e165424825e30aba38f3bf950d3351f8d80e93d52cad79cfa956a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.2/claudebar-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1384eb2200a71c0af5b140199ea0ede22d20d4282b50a3ef17c1763cdbc7f666"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.3/claudebar-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "fdeecf727359540836a8b06ec0c3cd76efd8eb1cdcdbcdbb37d46442a7a27c77"
     end
   end
   license "MIT"
