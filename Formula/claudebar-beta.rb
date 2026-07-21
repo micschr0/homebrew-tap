@@ -1,25 +1,25 @@
 class ClaudebarBeta < Formula
-  desc "Powerline-style statusline for Claude Code, with a TUI configurator, themes and styles"
+  desc "Powerline-style statusline for Claude Code, with TUI configurator and themes"
   homepage "https://micschr0.github.io/claudebar"
-  version "2026.7.21-beta.1"
+  version "2026.7.21-beta.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.1/claudebar-aarch64-apple-darwin.tar.gz"
-      sha256 "3b62e5a5ca72db300ffee4b3cf9095272a4db946fe78ea4ae6518ec7cb9650a6"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.2/claudebar-aarch64-apple-darwin.tar.gz"
+      sha256 "76ee2e38bdb3bd1dedcdd567bfcedfd23a3e283054d079cb79ea6570a582d7d3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.1/claudebar-x86_64-apple-darwin.tar.gz"
-      sha256 "dbca468873f94391445dadda11383916302cda34daa38abd0c728895683dd15c"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.2/claudebar-x86_64-apple-darwin.tar.gz"
+      sha256 "ac9dbea202364c53d18df662062f3c954a88e29693bcdbbf0321748dbc9ec624"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.1/claudebar-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4c2be3e3a427b6230552def6d5d76bda44499ef98b6925ceb56d5e600d4fcf1c"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.2/claudebar-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "79e2d9e2f500c6b31c60a16a72a63556029d201de5ec96fd018266f465d69d5d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.1/claudebar-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e5e35f530a6c05ff28c5099bb67ca2ca755bf728a33b1b6f1a0796e4214308e5"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21-beta.2/claudebar-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "27104c35c28317ef6f5d22ca67c7bbb938a011bb4a674ef561d80b062de11294"
     end
   end
   license "MIT"
