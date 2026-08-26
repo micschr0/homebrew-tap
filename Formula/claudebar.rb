@@ -1,25 +1,25 @@
 class Claudebar < Formula
   desc "Powerline-style statusline for Claude Code, with TUI configurator and themes"
   homepage "https://micschr0.github.io/claudebar"
-  version "2026.7.21"
+  version "2026.8.27"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21/claudebar-aarch64-apple-darwin.tar.gz"
-      sha256 "970753f0c718b818bb6f15df3d635160858ba506233ce9377a5600af2909945d"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.8.27/claudebar-aarch64-apple-darwin.tar.gz"
+      sha256 "cda21dc6a48019533893b54fe4e0b8e2217e12041ad3a981ba44901478fcf567"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21/claudebar-x86_64-apple-darwin.tar.gz"
-      sha256 "d1492d698bb6a8180de47ba3fa23c0d0e4c39a0bce43fbd92cb2f1bf5ee9cde2"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.8.27/claudebar-x86_64-apple-darwin.tar.gz"
+      sha256 "6b11924f26a89e7ea4513108241105155eaf8fd586a99c737a07e0a7f63eca47"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21/claudebar-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "3fa7e03a631de713c66086cda65fc86e693253fd96576d4a51f8caf9402d6436"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.8.27/claudebar-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "6743f2feaf605726236ce92507cc21c502d0c1fa26ee6d53e3f727624a7b5b70"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.7.21/claudebar-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7c57068140c3c00818bcece6545896e5177c1a6ff90cbe1fc36e91e8a844584a"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.8.27/claudebar-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b71858d4ea935b36000ce272f11281197a53ba5df368e7f263df38942b85d6f7"
     end
   end
   license "MIT"
@@ -51,10 +51,18 @@ class Claudebar < Formula
   end
 
   def install
-    bin.install "claudebar" if OS.mac? && Hardware::CPU.arm?
-    bin.install "claudebar" if OS.mac? && Hardware::CPU.intel?
-    bin.install "claudebar" if OS.linux? && Hardware::CPU.arm?
-    bin.install "claudebar" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "claudebar"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "claudebar"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "claudebar"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "claudebar"
+    end
 
     install_binary_aliases!
 
