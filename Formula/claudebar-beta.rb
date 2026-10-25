@@ -1,25 +1,25 @@
 class ClaudebarBeta < Formula
   desc "Powerline-style statusline for Claude Code, with TUI configurator and themes"
   homepage "https://micschr0.github.io/claudebar"
-  version "2026.10.24-beta.1"
+  version "2026.10.25-beta.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.10.24-beta.1/claudebar-aarch64-apple-darwin.tar.gz"
-      sha256 "d62c77df61c38917bae8bbb10718500c886009721ed6a79b8a6964623e02b675"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.10.25-beta.1/claudebar-aarch64-apple-darwin.tar.gz"
+      sha256 "cdbf61698e5e8647d7736a696f2efb319391cab73e297b07a2342b8cfb6941ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.10.24-beta.1/claudebar-x86_64-apple-darwin.tar.gz"
-      sha256 "0829d7b298cec8a4a06bfefc7668ec54eca4812a4aa41bba928867e9a9f42e06"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.10.25-beta.1/claudebar-x86_64-apple-darwin.tar.gz"
+      sha256 "460181ef44e9d54d3632e31715b026d721b979d1eec2213316e9b97be95dd1fe"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.10.24-beta.1/claudebar-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "24ddde3daf532b169516fab2ef69a9d81fbdea63e3cbfcf972c3a975d83f1bc2"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.10.25-beta.1/claudebar-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8e9a6e0e91d8c03621e2a4551cbbce24dd3c05e0246f174a371cfaf05bfe9975"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/micschr0/claudebar/releases/download/2026.10.24-beta.1/claudebar-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "bd01e07fce2f21afcbdacb9fc528f2575631272a6179d8993358b895a9fe3a35"
+      url "https://github.com/micschr0/claudebar/releases/download/2026.10.25-beta.1/claudebar-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "93293864b8f433c21cc265fccceab4d8b828bf59e670029bf6de49b6c687c574"
     end
   end
   license "MIT"
